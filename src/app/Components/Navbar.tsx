@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Logo from '../assets/ygsd_transparent.png';
 import MenuBar from './MenuBar';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,7 +66,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="absolute text-2xl mx-8 font-bold flex items-center space-x-2">
-                <img src={Logo.src} alt="Logo Image" className='w-full h-[120px]' />
+                <Image src={Logo.src} alt="Logo Image" width={120} height={120} />
             </div>
             <MenuBar/>
         </div>

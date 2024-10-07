@@ -10,15 +10,15 @@ const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center mb-12">
           {/* Logo */}
           <div className="flex items-center mb-8 lg:mb-0">
-            <Image src="/path-to-your-logo.svg" alt="WebTeck" width={40} height={40} />
-            <span className="text-2xl font-bold ml-2">WebTeck</span>
+            <Image src="/path-to-your-logo.svg" alt="Ygsd" width={40} height={40} />
+            <span className="text-2xl font-bold ml-2">Ygsd</span>
           </div>
           
           {/* News Subscription */}
           <div className="flex flex-col lg:flex-row items-center">
             <div className="text-center lg:text-left mr-8">
               <h3 className="text-xl font-semibold mb-2">News Subscription</h3>
-              <p className="text-sm text-gray-400">Get Latest Deals from Waker's Inbox & Subscribe Now</p>
+              <p className="text-sm text-gray-400">Get Latest Deals from Waker&apos;s Inbox & Subscribe Now</p>
             </div>
             <div className="flex mt-4 lg:mt-0">
               <input

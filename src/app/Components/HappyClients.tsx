@@ -1,7 +1,6 @@
 "use client"
 import React, { useRef } from 'react';
 import Image from 'next/image';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import TestiBg from '../assets/testi_bg.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -97,7 +96,14 @@ const HappyClients: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <img src={TestiBg.src} alt="" className='absolute top-0 left-0 right-0 -z-10 h-[40%] lg:h-[60%] xl:h-[60%] 2xl:h-[50%] w-full xl:max-w-7xl xl:mx-auto' />
+        <Image
+          src={TestiBg.src}
+          alt=""
+          className='absolute top-0 left-0 right-0 -z-10 w-full xl:max-w-7xl xl:mx-auto'
+          style={{ height: '40%' }}
+          sizes="100vw"
+          fill
+        />
       </div>
     </section>
   );

@@ -1,23 +1,17 @@
 import React from 'react';
 import Image1 from '../assets/image1.webp';
 import Image2 from '../assets/image2.jpg';
-import Image3 from '../assets/image3.webp';
 import Image5 from '../assets/image5.webp';
 import HexagonTree from './HexagonTree';
 import OctagonTree from './OctagonTree';
 import { IoIosArrowForward } from 'react-icons/io';
+import Image from 'next/image';
 
-import { Plus_Jakarta_Sans, Playfair_Display,Cinzel,League_Spartan } from 'next/font/google';
+import {Cinzel,League_Spartan } from 'next/font/google';
 
 
 
-const plus_jakarta_sans = Plus_Jakarta_Sans({
-    subsets: ['latin'],
-});
 
-const playfair_display = Playfair_Display({
-    subsets: ['latin'],
-});
 
 const cinzel = Cinzel({
     subsets: ['latin'],
@@ -52,12 +46,22 @@ const HeroSection = () => {
                    {/* Randomly Positioned Images */}
                         <div className="absolute top-5 left-1/4 md:left-0 animate-float-slow">
                             <div className="w-full h-[100px] md:h-[150px] border-t-2 border-b-2 border-primary p-2 rounded-3xl flex items-center justify-center text-gray-500">
-                                <img src={Image1.src} alt="Image 1" className="rounded-3xl w-full h-full object-cover opacity-50" />
+                                <Image
+                                    src={Image1.src}
+                                    alt="Image 1"
+                                    fill
+                                    className="rounded-3xl object-cover opacity-50"
+                                />
                             </div>
                         </div>
                         <div className="absolute top-10 right-1/4 md:right-10 animate-float-slow-delay-1">
-                            <div className="w-full h-[120px] md:h-[200px]  border-t-2 border-b-2 border-primary p-2 rounded-3xl shadow-md flex items-center justify-center text-gray-500">
-                                <img src={Image2.src} alt="Image 2" className="rounded-3xl w-full h-full object-cover opacity-50" />
+                            <div className="w-full h-[120px] md:h-[200px] border-t-2 border-b-2 border-primary p-2 rounded-3xl shadow-md flex items-center justify-center text-gray-500">
+                                <Image
+                                    src={Image2.src}
+                                    alt="Image 2"
+                                    fill
+                                    className="rounded-3xl object-cover opacity-50"
+                                />
                             </div>
                         </div>
                         {/* <div className="absolute top-10  md:left-4 animate-float-slow-delay-2">
@@ -67,7 +71,13 @@ const HeroSection = () => {
                         </div> */}
                         <div className="absolute bottom-1/3 right-1/4 md:right-1/3 animate-float-slow-delay-3">
                             <div className="w-full h-[110px] md:h-[180px] border-t-2 border-b-2 border-primary p-2 rounded-3xl shadow-md flex items-center justify-center text-gray-500">
-                                <img src={Image5.src} alt="Image 4" className="rounded-3xl w-full h-full object-cover opacity-50" />
+                                <Image
+                                    src={Image5}
+                                    alt="Image 4"
+                                    className="rounded-3xl object-cover opacity-50"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                />
                             </div>
                         </div>
                 </div>
