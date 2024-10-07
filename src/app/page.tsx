@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Components/Navbar'
 import HeroSection from './Components/HeroSection'
 import WhoWeAre from './Components/WhoWeAre'
-import Services from './Components/Services'
+import ServiceSection from './Components/ServiceSection'
 import WhyChooseUs from './Components/WhyChooseUs'
 import ProjectShowcase from './Components/ProjectShowcase'
 import WorkProcess from './Components/WorkProcess'
@@ -18,7 +18,7 @@ const page = () => {
       <Navbar/>
       <HeroSection/>
       <WhoWeAre/>
-      <Services/>
+      <ServiceSection/>
       <WhyChooseUs/>
       <ProjectShowcase/>
       <StatsSection/>

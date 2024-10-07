@@ -22,7 +22,7 @@ const serviceItems = [
   { title: 'Virtual Exhibitions', description: 'Host and attend online art shows', image: `${Image5.src}` },
 ]
 
-const Services = () => {
+const ServicesSection = () => {
   return (
     <div className="py-8 sm:py-12  px-6 sm:px-8 lg:px-16 bg-surface">
       <div className={`${league_spartan.className} max-w-7xl mx-auto`}>
@@ -68,4 +68,4 @@ const ServiceItem = ({ title, description, image, isEven }: { title: string; des
   )
 }
 
-export default Services
+export default ServicesSection

@@ -59,13 +59,13 @@ const Navbar = () => {
           </div>
       </div>
       {/* Bottom Navbar */}
-      <nav className={`w-full bg-darkcolor text-white h-[120px] transition-all duration-300 ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : ''}`}>
+      <nav className={`w-full bg-darkcolor text-white h-[120px] transition-all duration-300 ${isScrolled ? 'fixed top-0 left-0 right-0 z-[100]' : ''}`}>
         <div className="flex justify-between items-center h-full">
-            <div className='relative -left-8 bg-primary w-[27%] h-full transform skew-x-[30deg]'>
+            <div className='relative -left-8 bg-primary md:w-[27%] w-[40%] h-full transform skew-x-[30deg] '>
                 <div className='bg-white w-[96%] h-full transform -skew-x-[12deg]'>
                 </div>
             </div>
-            <div className="absolute text-2xl mx-8 font-bold flex items-center space-x-2">
+            <div className="absolute text-2xl mx-8 font-bold flex items-center space-x-2 z-50">
                 <Image src={Logo.src} alt="Logo Image" width={120} height={120} />
             </div>
             <MenuBar/>
