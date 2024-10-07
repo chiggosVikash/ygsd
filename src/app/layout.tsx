@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import {Open_Sans,Inter} from "next/font/google";
+import {Open_Sans,} from "next/font/google";
 import "./globals.css";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
 });
-const inter = Inter({
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "YGSD",

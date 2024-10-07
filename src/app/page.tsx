@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
-import MenuBar from './Components/MenuBar'
 import HeroSection from './Components/HeroSection'
 import WhoWeAre from './Components/WhoWeAre'
 import Services from './Components/Services'

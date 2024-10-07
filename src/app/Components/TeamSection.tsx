@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, EffectCoverflow, Zoom } from 'swiper/modules';
+import { Navigation, Pagination,  Zoom } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';

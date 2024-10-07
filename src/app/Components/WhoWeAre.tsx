@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { IoIosArrowForward } from 'react-icons/io';
-import { Cinzel, League_Spartan,Plus_Jakarta_Sans } from 'next/font/google';
+import { Cinzel, League_Spartan } from 'next/font/google';
 import Image3 from '../assets/image3.webp';
 
 const cinzel = Cinzel({
@@ -12,9 +12,7 @@ const league_spartan = League_Spartan({
     subsets: ['latin'],
 });
 
-const plus_jakarta_sans = Plus_Jakarta_Sans({
-    subsets: ['latin'],
-});
+
 
 
 const WhoWeAre = () => {
