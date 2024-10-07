@@ -19,7 +19,7 @@ const partners = [
 const WorkProcess: React.FC = () => {
   return (
     <div className="overflow-x-hidden bg-gradient-to-b from-surface to-white py-16 px-4 sm:px-6 lg:px-8 xl:flex xl:justify-center">
-      <div className="max-w-7xl mx-8 ">
+      <div className="max-w-7xl md:mx-8 mx-0">
         <div className="text-center mb-12">
           <span className="bg-tertiary text-primary px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">Work Process</span>
           <h2 className="mt-3 text-3xl font-bold text-darkcolor sm:text-4xl">How We Make It Happen</h2>
@@ -28,7 +28,7 @@ const WorkProcess: React.FC = () => {
 
         <div className="relative mt-20">
           {/* SVG for curved lines */}
-          <svg className=" absolute top-0 left-32 w-full h-full" xmlns="http://www.w3.org/2000/svg" style={{zIndex: 0}}>
+          <svg className="lg:flex hidden  absolute top-0 left-32 w-full h-full" xmlns="http://www.w3.org/2000/svg" style={{zIndex: 0}}>
             <path
               d="M0 100 C 100 50, 200 150, 300 100 S 500 50, 600 100 S 800 150, 900 100"
               fill="none"
@@ -39,7 +39,7 @@ const WorkProcess: React.FC = () => {
           </svg>
 
           {/* Work steps */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-16 gap-16 mb-16 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-16  gap-16 mb-16 relative z-10">
             {workSteps.map((step, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md relative">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 flex items-center justify-center w-16 h-16 bg-tertiary rounded-full">

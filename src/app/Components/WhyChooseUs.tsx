@@ -3,7 +3,7 @@ import Image1 from '../assets/image1.webp';
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-surface p-4 sm:p-8">
+    <section className="py-8 sm:py-12 md:py-16 px-6 sm:px-8 lg:px-16">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
@@ -61,12 +61,13 @@ export default function WhyChooseUs() {
                 alt="IT professionals working together"
                 width={500}
                 height={500}
+                
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="absolute top-0 right-0 bg-primary text-white rounded-full w-20 h-20 sm:w-24 sm:h-24 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-110">
-              <p className="text-xl sm:text-3xl font-bold leading-none">10k+</p>
-              <p className="text-xxs sm:text-xs">Active Clients</p>
+            <div className="absolute top-0 right-0 bg-primary text-white rounded-full w-[85px] h-[85px] sm:w-24 sm:h-24 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-110">
+              <p className="text-lg sm:text-3xl font-bold leading-none">10k+</p>
+              <p className="text-xs sm:text-xs">Active Clients</p>
             </div>
           </div>
         </div>
