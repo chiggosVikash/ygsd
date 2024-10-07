@@ -26,10 +26,10 @@ const ConsultationSection: React.FC = () => {
                   <path fillRule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm1-7a1 1 0 10-2 0v3a1 1 0 102 0V9z" clipRule="evenodd" />
                 </svg>
               </div>
-              <span className="text-primary font-semibold">LET'S CONSULTATION</span>
+              <span className="text-primary font-semibold">LET&apos;S CONSULTATION</span>
             </div>
             <h2 className={`${leagueSpartan.className} text-4xl font-bold text-darkcolor mb-4`}>
-              Let's Talk About Business Solutions <span className="text-primary">With Us</span>
+              Let&apos;s Talk About Business Solutions <span className="text-primary">With Us</span>
             </h2>
             <button className="bg-primary text-white px-6 py-3 rounded-md font-semibold flex items-center transition-colors duration-300 hover:bg-secondary">
               CONTACT US
