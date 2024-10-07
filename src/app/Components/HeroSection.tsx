@@ -45,22 +45,24 @@ const HeroSection = () => {
                    <OctagonTree/>
                    {/* Randomly Positioned Images */}
                         <div className="absolute top-5 left-1/4 md:left-0 animate-float-slow">
-                            <div className="w-full h-[100px] md:h-[150px] border-t-2 border-b-2 border-primary p-2 rounded-3xl flex items-center justify-center text-gray-500">
+                            <div className="w-full h-max border-t-2 border-b-2 border-primary p-2 rounded-md flex items-center justify-center text-gray-500">
                                 <Image
                                     src={Image1.src}
                                     alt="Image 1"
-                                    fill
-                                    className="rounded-3xl object-cover opacity-50"
+                                    width={300}
+                                    height={300}
+                                    className="rounded-md object-cover opacity-50"
                                 />
                             </div>
                         </div>
-                        <div className="absolute top-10 right-1/4 md:right-10 animate-float-slow-delay-1">
-                            <div className="w-full h-[120px] md:h-[200px] border-t-2 border-b-2 border-primary p-2 rounded-3xl shadow-md flex items-center justify-center text-gray-500">
+                        <div className="absolute -top right-1/4 md:right-10 animate-float-slow-delay-1">
+                            <div className="w-full  border-t-2 border-b-2 border-primary p-2 rounded-md shadow-md flex items-center justify-center text-gray-500">
                                 <Image
                                     src={Image2.src}
                                     alt="Image 2"
-                                    fill
-                                    className="rounded-3xl object-cover opacity-50"
+                                    width={300}
+                                    height={300}
+                                    className="rounded-md object-cover opacity-50"
                                 />
                             </div>
                         </div>
@@ -69,14 +71,14 @@ const HeroSection = () => {
                                 <img src={Image3.src} alt="Image 3" className="rounded-3xl w-full h-full object-cover opacity-70 " />
                             </div>
                         </div> */}
-                        <div className="absolute bottom-1/3 right-1/4 md:right-1/3 animate-float-slow-delay-3">
-                            <div className="w-full h-[110px] md:h-[180px] border-t-2 border-b-2 border-primary p-2 rounded-3xl shadow-md flex items-center justify-center text-gray-500">
+                        <div className="absolute bottom-10 right-1/4 md:right-1/3 animate-float-slow-delay-3">
+                            <div className="w-full  border-t-2 border-b-2 border-primary p-2 rounded-md shadow-md flex items-center justify-center text-gray-500">
                                 <Image
-                                    src={Image5}
+                                    src={Image5.src}
                                     alt="Image 4"
-                                    className="rounded-3xl object-cover opacity-50"
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    width={300}
+                                    height={300}
+                                    className="rounded-md object-cover opacity-50"
                                 />
                             </div>
                         </div>

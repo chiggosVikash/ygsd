@@ -83,7 +83,7 @@ const HappyClients: React.FC = () => {
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
-          className="mySwiper"
+          className="mySwiper mx-12"
         >
           {[...testimonials, ...testimonials].map((testimonial, index) => (
             <SwiperSlide key={`${testimonial.id}-${index}`}>
@@ -99,10 +99,10 @@ const HappyClients: React.FC = () => {
         <Image
           src={TestiBg.src}
           alt=""
+          height={400}
+          width={1920}
           className='absolute top-0 left-0 right-0 -z-10 w-full xl:max-w-7xl xl:mx-auto'
-          style={{ height: '40%' }}
           sizes="100vw"
-          fill
         />
       </div>
     </section>
