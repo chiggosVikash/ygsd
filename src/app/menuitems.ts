@@ -25,16 +25,16 @@ export const menuItems: MenuItem[] = [
     {
         id: 4,
         name: 'TEAMS',
-        link: '/pages'
+        link: '/teams'
     },
     {
         id: 5,
         name: 'PROJECTS',
-        link: '/blog'
+        link: '/projects'
     },
     {
         id: 6,
         name: 'CONTACT US',
-        link: '/contact'
+        link: '/contact-us'
     }
 ];

@@ -1,11 +1,9 @@
 import Image from 'next/image';
-import Navbar from '../Components/Navbar';
 import ServiceBg from '../assets/service_bg.jpg';
 import ServiceCards from '../Components/ServiceCards';
 export default function Services() {
   return (
     <div>
-    <Navbar/>
     <div className="relative h-[30vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh] overflow-hidden">
       {/* Background Image */}
       <Image
