@@ -34,7 +34,10 @@ const HeroSection = () => {
                    Transforming Ideas Into <span className='text-primary'>Reality</span>
                    </h1>
                    <p className={`text-lg md:text-onSurface text-secondary mb-8 max-w-2xl`}>
-                   Crafting digital solutions that turn your business dreams into reality.
+                   Transforming ideas into powerful software solutions. We bring your vision to life,
+                   crafting cutting-edge digital experiences that drive business growth. From concept
+                   to code, we&apos;re your partners in innovation, turning complex challenges into
+                   seamless, user-friendly realities. Let&apos;s build the future of your business together.
                    </p>
                    <button className="bg-primary text-white px-6 py-3 rounded-lg group hover:bg-secondary font-semibold uppercase flex items-center transition duration-300  ">
                        Get Started

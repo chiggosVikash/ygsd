@@ -30,17 +30,17 @@ const ContactUs = () => {
           <ContactInfo 
             icon={MdLocationOn}
             title="Our Office Address"
-            lines={["Burnsville, MN 55337 Street,", "United States"]}
+            lines={["Dariyapur,Kurthoul Patna-804453", "Bihar, India"]}
           />
           <ContactInfo 
             icon={MdPhone}
             title="Call Us Anytime"
-            lines={["(+65) - 48596 - 5789", "+190-8800-0393"]}
+            lines={["(+91) - 9060924752", "+91- 6299254655"]}
           />
           <ContactInfo 
             icon={MdEmail}
             title="Send An Email"
-            lines={["info.example@traga.com", "info@traga.com"]}
+            lines={["ygsd2024@gmail.com",]}
           />
         </div>
       </div>
@@ -50,7 +50,7 @@ const ContactUs = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-12">
         <div className="aspect-w-16 aspect-video">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.3105632613723!2d-93.27741812346979!3d44.77200087107275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f631f9f7f7c4b7%3A0x5c1b3d7f3e2a9c9f!2sBurnsville%2C%20MN%2055337!5e0!3m2!1sen!2sus!4v1682523143316!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.3364600372474!2d85.1274617738969!3d25.560470577478878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f2a7ea20bff179%3A0x17b6017762db1a11!2sDariyapur%20Rd%2C%20Bihar%20804453!5e0!3m2!1sen!2sin!4v1728467892082!5m2!1sen!2sin"
             width="100%" 
             height="100%" 
             style={{border:0}} 

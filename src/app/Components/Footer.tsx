@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from '../assets/ygsd_transparent.png'
 
 const Footer: React.FC = () => {
   return (
@@ -10,21 +11,21 @@ const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center mb-12">
           {/* Logo */}
           <div className="flex items-center mb-8 lg:mb-0">
-            <Image src="/path-to-your-logo.svg" alt="Ygsd" width={40} height={40} />
-            <span className="text-2xl font-bold ml-2">Ygsd</span>
+            <Image src={Logo.src} alt="Ygsd" width={150} height={40} />
+            {/* <span className="text-2xl font-bold ml-2">Ygsd</span> */}
           </div>
           
           {/* News Subscription */}
           <div className="flex flex-col lg:flex-row items-center">
             <div className="text-center lg:text-left mr-8">
               <h3 className="text-xl font-semibold mb-2">News Subscription</h3>
-              <p className="text-sm text-gray-400">Get Latest Deals from Waker&apos;s Inbox & Subscribe Now</p>
+              <p className="text-sm text-gray-400">Subscribe Now</p>
             </div>
             <div className="flex mt-4 lg:mt-0">
               <input
                 type="email"
                 placeholder="Email Address"
-                className="bg-secondary text-white px-4 py-2 rounded-l-md focus:outline-none"
+                className="bg-gray-700 text-white px-4 py-2 rounded-l-md focus:outline-none"
               />
               <button className="bg-primary hover:bg-opacity-90 text-white px-6 py-2 rounded-r-md transition duration-300">
                 SUBSCRIBE
@@ -39,8 +40,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">ABOUT COMPANY</h4>
             <p className="text-sm text-gray-400 mb-4">
-              Professionally redefine transparent ROI through low-risk high-yield imperatives. 
-              Progressively create empowered, cost effective users via team driven.
+              We are a team of experienced professionals who are dedicated to helping businesses succeed.
             </p>
             <div className="flex space-x-4">
               {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">QUICK LINKS</h4>
             <ul className="space-y-2">
-              {['About Us', 'Team', 'Faq', 'Projects', 'Contact us'].map((item) => (
+              {['About Us', 'Teams', 'Projects', 'Contact us'].map((item) => (
                 <li key={item} className="flex items-center">
                   <svg className="w-3 h-3 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

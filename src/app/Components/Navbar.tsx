@@ -30,20 +30,20 @@ const Navbar = () => {
   return (
     <header className=" border-box overflow-x-hidden">
       {/* Top bar */}
-      <div className={`bg-primary   text-white text-sm h-14 px-12 transition-all duration-300 ${isScrolled ? 'opacity-0 -translate-y-full' : 'opacity-100'}`}>
+      <div className={`bg-primary  text-white text-sm h-14 px-12 transition-all duration-300 ${isScrolled ? 'opacity-0 -translate-y-full' : 'opacity-100'}`}>
           <div className="max-w-7xl flex justify-between items-center h-full">
             <div className="hidden lg:flex space-x-6">
               <span className="flex items-center space-x-1">
                 <FaMapMarkerAlt className="text-tertiary" />
-                <span>54 NJ-12, Flemington, United States</span>
+                <span>Dariyapur,Kurthoul,Patna-804453,Bihar</span>
               </span>
               <span className="flex items-center space-x-1">
                 <FaPhoneAlt className="text-tertiary" />
-                <span>+153-987-3657</span>
+                <span>+91-9060924752</span>
               </span>
               <span className="flex items-center space-x-1">
                 <FaEnvelope className="text-tertiary" />
-                <span>info@webteck.com</span>
+                <span>ygsd2024@gmail.com</span>
               </span>
             </div>
             <div className="flex items-center space-x-4">

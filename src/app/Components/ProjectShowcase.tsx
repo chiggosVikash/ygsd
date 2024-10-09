@@ -11,25 +11,49 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 
 import ShowCase1 from '../assets/image1.webp';
-import ShowCase2 from '../assets/image2.jpg';
 import ShowCase3 from '../assets/image3.webp';
+import DpBazaar  from '../assets/dp_bazaar_logo.png';
+import Velicia from '../assets/velciae_logo.jpeg';
+import DRSSOLAR from '../assets/drs-solar.png'
 
 const projects = [
+ 
   {
-    title: 'Web Development',
-    description: 'Distinctively enable premium expertise for multifunctional action items. Energistically benchmark worldwide communities.',
-    image: `${ShowCase1.src}`
+    title: 'Dp Bazaar Mobile App',
+    description: "DP Bazaar mobile app offers a smooth e-commerce experience with easy navigation, secure transactions, and integrated affiliate marketing features.",
+    image: `${DpBazaar.src}`
   },
   {
-    title: 'SEO Optimization',
-    description: 'Distinctively enable premium expertise for multifunctional action items. Energistically benchmark worldwide communities.',
-    image: `${ShowCase2.src}`
-  },
-  {
-    title: 'Website Design',
-    description: 'Distinctively enable premium expertise for multifunctional action items. Energistically benchmark worldwide communities.',
+    title: 'Billing Software',
+    description: "YGSD Billing Software for shops provides an easy-to-use interface for managing invoices, inventory, and sales, ensuring efficient retail operations.",
     image: `${ShowCase3.src}`
   },
+  {
+    title: 'DRS Solar - Web App',
+    description: ' DRS Solar streamlines project management, performance tracking, and customer service, enhancing efficiency for solar panel installations.',
+    image: `${DRSSOLAR.src}`
+  },
+  {
+    title: 'Dp Bazaar - Web App',
+    description: "DP Bazaar is an advanced e-commerce and affiliate marketing web app developed by YGSD, enabling seamless shopping and revenue generation.",
+    image: `${DpBazaar.src}`
+  },
+  {
+    title: 'Veliciae - E-Commerce Web App',
+    description: "Veliciae is a jewelry e-commerce web app designed to showcase premium jewelry collections, offering a seamless shopping experience and secure transactions.",
+    image: `${Velicia.src}`
+  },
+  {
+    title: 'Business Management System',
+    description: "YGSD's Business Management Software offers comprehensive solutions for invoicing, inventory control, sales tracking, and performance analytics to optimize operations.",
+    image: `${ShowCase1.src}`
+  },
+
+  {
+    title: 'School ERP',
+    description: "YGSD's School ERP system simplifies academic management, attendance tracking, and payroll, providing a complete solution for educational institutions.",
+    image: `${ShowCase1.src}`
+  }
   // Add more projects as needed
 ];
 

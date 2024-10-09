@@ -5,8 +5,12 @@ import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
 import Image1 from '../assets/image1.webp';
 import Image2 from '../assets/image2.jpg';
-import Image3 from '../assets/image3.webp';
-import Image5 from '../assets/image5.webp';
+import SEOIMG from '../assets/seo-image.jpeg';
+import GRAPHICSIMG from '../assets/graphics-design.jpg';
+import BRANDPROMOTIONIMG from '../assets/brand-prmotion.jpg';
+import VIDEOEDITINGIMG from '../assets/video-editing.webp';
+import SOCIALMEDIAIMG from '../assets/socialads.webp';
+import CMS from '../assets/cms.webp';
 import { FaPalette } from 'react-icons/fa';
 import { League_Spartan } from 'next/font/google';
 
@@ -16,17 +20,24 @@ const league_spartan = League_Spartan({
 
 
 const serviceItems = [
-  { title: 'Online Platform', description: 'Connect with virtual artists worldwide', image: `${Image1.src}` },
-  { title: 'Portfolio Showcase', description: 'Display your best digital artworks', image: `${Image2.src}` },
-  { title: 'Collaboration Tools', description: 'Work together on virtual projects', image: `${Image3.src}` },
-  { title: 'Virtual Exhibitions', description: 'Host and attend online art shows', image: `${Image5.src}` },
+  { title: 'Mobile App Development', description: 'Create cutting-edge Android and iOS apps tailored to your business needs. Our expert developers ensure seamless functionality and engaging user experiences.', image: `${Image1.src}` },
+  { title: 'Web App Development', description: 'Build powerful, responsive web applications that drive your business forward. We deliver custom solutions optimized for performance, scalability, and user satisfaction.', image: `${Image2.src}` },
+  { title: 'SEO', description: 'Boost your online visibility and climb search engine rankings. Our SEO strategies drive organic traffic, increase conversions, and enhance your digital presence.', image: `${SEOIMG.src}` },
+  { title: 'Graphics Design', description: 'Transform your ideas into visually stunning designs. Our creative team crafts eye-catching graphics that elevate your brand and captivate your audience.', image: `${GRAPHICSIMG.src}` },
+  { title: 'Brand Promotion', description: 'Elevate your brand presence with strategic promotion. We create compelling campaigns that resonate with your target audience and drive brand loyalty.', image: `${BRANDPROMOTIONIMG.src}` },
+  { title: 'Social Media Content Management', description: 'Engage your audience with dynamic social media content. Our CMS experts curate and manage your online presence, fostering community and driving growth.', image: `${CMS.src}` },
+  { title: 'Video Editing', description: 'Transform raw footage into polished, professional videos. Our editing team creates compelling visual stories that captivate viewers and convey your message effectively.', image: `${VIDEOEDITINGIMG.src}` },
+  { title: 'Social Media Ads', description: 'Maximize your reach with targeted social media advertising. We create and manage campaigns that drive engagement, conversions, and ROI across platforms.', image: `${SOCIALMEDIAIMG.src}` },
 ]
 
 const ServicesSection = () => {
   return (
     <div className="py-8 sm:py-12  px-6 sm:px-8 lg:px-16 bg-surface">
       <div className={`${league_spartan.className} max-w-7xl mx-auto`}>
-        <h2 className="text-3xl font-bold text-center mb-12 uppercase">Our Services</h2>
+        <div className="text-center mb-12">
+          <h2 className="lg:text-6xl text-4xl font-bold ">Our <span className='text-primary'>Services</span></h2>
+          <p className="text-xl text-gray-500">Empowering Digital Artists Worldwide</p>
+        </div>
         <div className="relative">
           <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/25 via-gray-300 to-primary/50 hidden md:block"></div>
           <div className="space-y-16">

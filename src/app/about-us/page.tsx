@@ -19,10 +19,10 @@ const AboutUs = () => {
               <h2 className={`${leagueSpartan.className} text-4xl font-bold text-darkcolor`}>Who We Are</h2>
               <p className="text-lg font-semibold text-primary">Innovators in Software Development</p>
             </div>
-            <p className="text-lg text-onSurface">
+            <p className="text-sm leading-6 text-gray-600">
               YGSD is a dynamic team of innovators dedicated to transforming ideas into reality. We specialize in cutting-edge software development and design solutions that push the boundaries of what&apos;s possible.
             </p>
-            <p className="text-lg text-onSurface">
+            <p className="text-sm leading-6 text-gray-600">
               Our passion for technology and creativity drives us to deliver exceptional results for our clients, helping them stay ahead in today&apos;s fast-paced digital landscape.
             </p>
             <div className="flex space-x-3 pt-4">

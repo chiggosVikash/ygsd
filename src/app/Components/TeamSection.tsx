@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination,  Zoom } from 'swiper/modules';
+import { FaUser } from 'react-icons/fa'; // Import the person icon
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,23 +11,20 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/zoom';
-import Team1 from '../assets/team1.jpg';
-import Team2 from '../assets/team2.jpg';
-import Team3 from '../assets/team3.jpg';
-
+import Chitranjan from '../assets/chitranjan.png';
 interface TeamMember {
   name: string;
   role: string;
-  image: string;
+  image: string | null;
 }
 
 const teamMembers: TeamMember[] = [
-  { name: 'Alex Furnandes', role: 'Project Manager', image: `${Team1.src}` },
-  { name: 'Mary Crispy', role: 'Chief Expert', image: `${Team2.src}` },
-  { name: 'Henry Joshep', role: 'Product Manager', image: `${Team3.src}` },
-  { name: 'Alex Furnandes', role: 'Project Manager', image: `${Team1.src}` },
-  { name: 'Mary Crispy', role: 'Chief Expert', image: `${Team2.src}` },
-  { name: 'Henry Joshep', role: 'Product Manager', image: `${Team3.src}` },
+  { name: 'Vikash Kumar', role: 'CEO', image: null },
+  { name: 'Vinita Bharti', role: 'CTO', image: null},
+  { name: 'Amish Verma', role: 'CFO,CMO', image: null },
+  { name: 'Chitranjan Kushwaha', role: 'Social Media Specialist,CRM ', image: `${Chitranjan.src}` },
+  { name: 'Keshav Agarwal', role: 'CMO,CHRO', image: null },
+  { name: 'Shaurav Kumar', role: 'Video Editor', image: null },
   
   // Add more team members as needed
 ];
@@ -65,15 +63,21 @@ const TeamSection: React.FC = () => {
             className="mySwiper !pb-12"
           >
             {teamMembers.map((member, index) => (
-              <SwiperSlide key={index} className="!w-[300px] !h-auto">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden relative">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={300}
-                    height={300}
-                    className="w-full h-64 object-cover"
-                  />
+              <SwiperSlide key={index} className="!w-[300px] !h-auto ">
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden relative mx-4">
+                  <div className="w-full h-64 flex items-center justify-center bg-gray-200">
+                    {member.image !== null ? (
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={256}
+                        height={256}
+                        className="object-cover w-full h-full"
+                      />
+                    ) : (
+                      <FaUser className="text-6xl text-gray-400" />
+                    )}
+                  </div>
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-darkcolor">{member.name}</h3>
                     <p className="text-primary">{member.role}</p>

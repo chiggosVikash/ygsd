@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
               <h2 className="text-primary text-sm sm:text-lg font-semibold">WHY CHOOSE US</h2>
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight text-darkcolor">
-              More Than 24+ Years Experience<br />
+              More Than 5+ Years Experience<br />
               We Provide <span className="text-primary">IT Services</span>
             </h1>
             <p className="text-onSurface mb-6 text-sm sm:text-base">
@@ -65,10 +65,10 @@ export default function WhyChooseUs() {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="absolute top-0 right-0 bg-primary text-white rounded-full w-[85px] h-[85px] sm:w-24 sm:h-24 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-110">
+            {/* <div className="absolute top-0 right-0 bg-primary text-white rounded-full w-[85px] h-[85px] sm:w-24 sm:h-24 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-110">
               <p className="text-lg sm:text-3xl font-bold leading-none">10k+</p>
               <p className="text-xs sm:text-xs">Active Clients</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
