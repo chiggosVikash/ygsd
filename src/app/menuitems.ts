@@ -14,7 +14,7 @@ export const menuItems: MenuItem[] = [
     {
         id: 2,
         name: 'ABOUT US',
-        link: '/about'
+        link: '/about-us'
     },
     {
         id: 3,
