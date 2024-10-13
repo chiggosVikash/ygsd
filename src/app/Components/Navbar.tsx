@@ -4,8 +4,11 @@ import Logo from '../assets/ygsd_transparent.png';
 import MenuBar from './MenuBar';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+
 
 const Navbar = () => {
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -65,7 +68,9 @@ const Navbar = () => {
                 <div className='bg-white w-[96%] h-full transform -skew-x-[12deg]'>
                 </div>
             </div>
-            <div className="absolute text-2xl mx-8 font-bold flex items-center space-x-2 z-50">
+            <div 
+                onClick={() => router.push('/')}
+                className="absolute text-2xl mx-8 font-bold flex items-center space-x-2 z-50">
                 <Image src={Logo.src} alt="Logo Image" width={120} height={120} />
             </div>
             <MenuBar/>

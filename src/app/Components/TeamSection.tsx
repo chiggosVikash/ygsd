@@ -12,6 +12,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/zoom';
 import Chitranjan from '../assets/chitranjan.png';
+import Saurav from '../assets/saurav.jpg';
+import Amish from '../assets/amish.jpeg';
+
 interface TeamMember {
   name: string;
   role: string;
@@ -21,10 +24,10 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   { name: 'Vikash Kumar', role: 'CEO', image: null },
   { name: 'Vinita Bharti', role: 'CTO', image: null},
-  { name: 'Amish Verma', role: 'CFO,CMO', image: null },
+  { name: 'Amish Verma', role: 'CFO,CMO', image: `${Amish.src}` },
   { name: 'Chitranjan Kushwaha', role: 'Social Media Specialist,CRM ', image: `${Chitranjan.src}` },
   { name: 'Keshav Agarwal', role: 'CMO,CHRO', image: null },
-  { name: 'Shaurav Kumar', role: 'Video Editor', image: null },
+  { name: 'Shaurav Kumar', role: 'Video Editor', image: `${Saurav.src}` },
   
   // Add more team members as needed
 ];

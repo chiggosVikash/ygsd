@@ -6,7 +6,27 @@ import Image1 from '../assets/image1.webp';
 
 const leagueSpartan = League_Spartan({ subsets: ['latin'] })
 
+interface CompanyValue {
+  title: string;
+  description: string;
+}
+
 const AboutUs = () => {
+  const companyValues: CompanyValue[] = [
+    {
+      title: 'Innovation',
+      description: 'Pushing boundaries and embracing cutting-edge technologies to create groundbreaking solutions that redefine industry standards.'
+    },
+    {
+      title: 'Collaboration',
+      description: 'Fostering a culture of teamwork and open communication, leveraging diverse skills and perspectives to achieve exceptional results.'
+    },
+    {
+      title: 'Excellence',
+      description: 'Committed to delivering the highest quality in every aspect of our work, continuously striving for improvement and exceeding expectations.'
+    }
+  ];
+
   return (
     <div className="bg-surface">
       <PageHeader title="Home" subtitle="About Us" />
@@ -49,19 +69,19 @@ const AboutUs = () => {
       <section className="bg-darkcolor py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           <div className="text-center space-y-2 mb-12">
-            <h2 className={`${leagueSpartan.className} text-3xl font-bold text-white`}>Our Values</h2>
+            <h2 className={`${leagueSpartan.className} text-5xl font-bold text-white`}>Our Values</h2>
             <p className="text-lg font-semibold text-tertiary">Guiding Principles for Excellence</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {['Innovation', 'Collaboration', 'Excellence'].map((value, index) => (
+            {companyValues.map((value, index) => (
               <div 
                 key={index} 
                 className={`bg-gradient-to-br from-primary to-secondary p-6 rounded-lg shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden relative group `}
               >
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-                <h3 className={`${leagueSpartan.className} text-xl font-semibold text-white mb-4 relative z-10`}>{value}</h3>
-                <p className="text-white relative z-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-white rounded-full opacity-0 group-hover:opacity-20 transition-all duration-300 animate-ripple"></div>
+                <h3 className={`${leagueSpartan.className} text-xl font-semibold text-white mb-4 relative z-10`}>{value.title}</h3>
+                <p className="text-white relative z-10">{value.description}</p>
+                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-white rounded-full opacity-0 group-hover:opacity-20 transition-all duration-300 group-hover:animate-none animate-ripple"></div>
               </div>
             ))}
           </div>

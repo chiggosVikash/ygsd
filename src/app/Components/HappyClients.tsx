@@ -23,40 +23,32 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Jackline Techie",
+    name: "Dhirendra Kumar",
     position: "CEO",
-    company: "Kormola",
-    image: "/path/to/jackline-image.jpg",
+    company: "DP Bazaar",
+    image: "/path/to/sarah-image.jpg",
     rating: 5,
-    comment: "Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge."
+    comment: "DP Bazaar's growth skyrocketed thanks to this amazing service. Our e-commerce platform now runs smoother than ever, delighting customers and boosting sales."
   },
   {
     id: 2,
-    name: "Abraham Khalil",
-    position: "CEO",
-    company: "Anatore",
-    image: "/path/to/abraham-image.jpg",
+    name: "Sudha Ranjan",
+    position: "Founder",
+    company: "DRS Solar",
+    image: "/path/to/michael-image.jpg",
     rating: 5,
-    comment: "Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge."
+    comment: "Incredible support for our solar energy business. They streamlined our processes, making it easier to manage projects and satisfy clients. Highly recommended!"
   },
   {
     id: 3,
-    name: "Md Sumon Mia",
+    name: "Founder",
     position: "CEO",
-    company: "Rimasu",
-    image: "/path/to/sumon-image.jpg",
+    company: "Veliciae",
+    image: "/path/to/emily-image.jpg",
     rating: 5,
-    comment: "Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge."
+    comment: "Our jewellery e-commerce site shines brighter now. They enhanced our online presence, resulting in increased customer engagement and higher sales. Simply brilliant!"
   },
-  {
-    id: 4,
-    name: "Md Sumon Mia",
-    position: "CEO",
-    company: "Rimasu",
-    image: "/path/to/sumon-image.jpg",
-    rating: 5,
-    comment: "Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge."
-  },
+  
 ];
 
 const HappyClients: React.FC = () => {
@@ -123,16 +115,13 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 max-w-sm mx-auto">
       <div className="flex items-center mb-4">
-        <div className="relative w-12 h-12 sm:w-16 sm:h-16 mr-3 sm:mr-4 ">
-          <Image
-            src={testimonial.image}
-            alt={testimonial.name}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-full"
-          />
-          <div className="absolute -bottom-1 -right-1 bg-primary text-white text-xs font-bold rounded-full w-5 h-5 sm:w-6 sm:h-6 flex items-center justify-center">
-            66
+        <div className="relative w-12 h-12 sm:w-16 sm:h-16 mr-3 sm:mr-4 bg-gray-200 rounded-2xl flex items-center justify-center">
+          <svg className="w-8 h-8 sm:w-10 sm:h-10 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+          </svg>
+          <div className="absolute bottom-[4px] -right-1 bg-primary text-white text-xs font-bold rounded-full w-1 h-1 flex items-center justify-center animate-ripple">
+          </div>
+          <div className="absolute bottom-[1px] -right-2 bg-primary text-white text-xs font-bold rounded-full w-3 h-3  flex items-center justify-center">
           </div>
         </div>
         <div>

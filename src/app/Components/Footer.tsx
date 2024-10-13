@@ -77,9 +77,9 @@ const Footer: React.FC = () => {
                   <svg className="w-3 h-3 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                  <Link href={`/services/${item.toLowerCase().replace(' ', '-')}`} className="text-gray-400 hover:text-primary transition duration-300">
+                  <span className="text-gray-400 hover:text-primary transition duration-300">
                     {item}
-                  </Link>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -90,8 +90,8 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">RECENT POSTS</h4>
             <div className="space-y-4">
               {[
-                { title: 'Unsatiable Entreaties May Collecting Power.', date: 'Feb 13 2023', slug: 'unsatiable-entreaties' },
-                { title: 'Regional Manager Limited Time Management.', date: 'Feb 13 2023', slug: 'regional-manager-time-management' },
+                { title: 'The Future of AI in Business', date: 'May 15 2024', slug: 'future-of-ai-in-business' },
+                { title: "YGSD's Approach to Sustainable Tech", date: 'May 10 2024', slug: 'ygsd-sustainable-tech-approach' },
               ].map((post, index) => (
                 <div key={index} className="flex items-start">
                   <div className="w-16 h-16 bg-gray-700 rounded-md mr-4"></div>
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
         <div className="mt-12 bg-primary py-4">
           <div className="container mx-auto px-4">
             <p className="text-sm text-center">
-              Copyright © 2024 Themeholy. All Rights Reserved.
+              Copyright © 2024 YGSD. All Rights Reserved.
             </p>
           </div>
         </div>

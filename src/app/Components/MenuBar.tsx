@@ -43,7 +43,7 @@ const MenuBar = () => {
          {isMenuOpen ? <FaTimes/> : <FaBars/>}
       </div>
       <div 
-        className={`md:hidden fixed top-28 left-0 right-0 z-50 bg-darkcolor overflow-y-auto ${isMenuOpen ? 'block' : 'hidden'}`}
+        className={`md:hidden transition-all duration-300 fixed top-28 left-0 right-0 z-50 bg-darkcolor overflow-y-auto ${isMenuOpen ? 'block' : 'hidden'}`}
       >
         <ul className='flex flex-col pt-20 pb-4'>
             {menuItems.map((item) => (
