@@ -33,8 +33,8 @@ const Navbar = () => {
   return (
     <header className=" border-box overflow-x-hidden">
       {/* Top bar */}
-      <div className={`bg-primary  text-white text-sm h-14 px-12 transition-all duration-300 ${isScrolled ? 'opacity-0 -translate-y-full' : 'opacity-100'}`}>
-          <div className="max-w-7xl flex justify-between items-center h-full">
+      <div className={ ` bg-primary text-white text-sm h-14 px-12 transition-all duration-300 ${isScrolled ? 'opacity-0 -translate-y-full' : 'opacity-100'}`}>
+          <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
             <div className="hidden lg:flex space-x-6">
               <span className="flex items-center space-x-1">
                 <FaMapMarkerAlt className="text-tertiary" />

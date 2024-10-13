@@ -1,11 +1,14 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import { League_Spartan } from 'next/font/google';
 import CustomerSupport from '../assets/customer_support.jpg';
+import { useRouter } from 'next/navigation';
 
 const leagueSpartan = League_Spartan({ subsets: ['latin'] });
 
 const ConsultationSection: React.FC = () => {
+  const router = useRouter();
   return (
     <section className="bg-white py-16 px-4 md:px-8 lg:px-24">
       <div className="max-w-7xl mx-auto">
@@ -31,7 +34,9 @@ const ConsultationSection: React.FC = () => {
             <h2 className={`${leagueSpartan.className} text-4xl font-bold text-darkcolor mb-4`}>
               Let&apos;s Talk About Business Solutions <span className="text-primary">With Us</span>
             </h2>
-            <button className="bg-primary text-white px-6 py-3 rounded-md font-semibold flex items-center transition-colors duration-300 hover:bg-secondary">
+            <button 
+              onClick={() => router.push('/contact-us')}
+            className="bg-primary text-white px-6 py-3 rounded-md font-semibold flex items-center transition-colors duration-300 hover:bg-secondary">
               CONTACT US
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Image1 from '../assets/image1.webp';
 import Image2 from '../assets/image2.jpg';
@@ -6,12 +7,9 @@ import HexagonTree from './HexagonTree';
 import OctagonTree from './OctagonTree';
 import { IoIosArrowForward } from 'react-icons/io';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 import {Cinzel,League_Spartan } from 'next/font/google';
-
-
-
-
 
 const cinzel = Cinzel({
     subsets: ['latin'],
@@ -22,6 +20,7 @@ const league_spartan = League_Spartan({
 });
 
 const HeroSection = () => {
+    const router = useRouter();
     return (
         <div className="relative pt-[100px] h-max bg-tertiary flex items-center justify-center overflow-hidden">
             <div className='grid  grid-cols-1 md:grid-cols-2'>
@@ -39,7 +38,9 @@ const HeroSection = () => {
                    to code, we&apos;re your partners in innovation, turning complex challenges into
                    seamless, user-friendly realities. Let&apos;s build the future of your business together.
                    </p>
-                   <button className="bg-primary text-white px-6 py-3 rounded-lg group hover:bg-secondary font-semibold uppercase flex items-center transition duration-300  ">
+                   <button 
+                        onClick={() => router.push('/contact-us')}
+                        className="bg-primary text-white px-6 py-3 rounded-lg group hover:bg-secondary font-semibold uppercase flex items-center transition duration-300  ">
                        Get Started
                        <IoIosArrowForward className="ml-2 text-lg items-center mb-1 group-hover:rotate-90 transition-transform duration-300" />
                    </button>

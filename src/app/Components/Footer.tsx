@@ -94,11 +94,11 @@ const Footer: React.FC = () => {
                 { title: "YGSD's Approach to Sustainable Tech", date: 'May 10 2024', slug: 'ygsd-sustainable-tech-approach' },
               ].map((post, index) => (
                 <div key={index} className="flex items-start">
-                  <div className="w-16 h-16 bg-gray-700 rounded-md mr-4"></div>
+                  {/* <div className="w-16 h-16 bg-gray-700 rounded-md mr-4"></div> */}
                   <div>
-                    <Link href={`/blog/${post.slug}`} className="text-sm hover:text-primary transition duration-300">
+                    <span className="text-sm hover:text-primary transition duration-300">
                       {post.title}
-                    </Link>
+                    </span>
                     <p className="text-xs text-gray-400 mt-1">{post.date}</p>
                   </div>
                 </div>

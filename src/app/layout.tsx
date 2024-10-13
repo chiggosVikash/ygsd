@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
@@ -30,10 +30,14 @@ export const metadata: Metadata = {
     images: ["https://www.ygsd.in/twitter-image.jpg"] ,
   },
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1",
   alternates: {
     canonical: "https://www.ygsd.in",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

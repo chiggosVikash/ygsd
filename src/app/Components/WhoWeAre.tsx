@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { IoIosArrowForward } from 'react-icons/io';
 import { Cinzel, League_Spartan } from 'next/font/google';
 import Image3 from '../assets/image3.webp';
+import {useRouter} from 'next/navigation';
 
 const cinzel = Cinzel({
     subsets: ['latin'],
@@ -16,6 +17,7 @@ const league_spartan = League_Spartan({
 
 
 const WhoWeAre = () => {
+  const router = useRouter();
   return (
     <div className="py-8 sm:py-12 md:py-16 px-6 sm:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
@@ -50,7 +52,9 @@ const WhoWeAre = () => {
             <p className="mt-4 text-sm leading-6 text-gray-600">
                 YGSD (Youth Group of Software Development) is a team of passionate developers, designers, and strategists. We’re dedicated to providing innovative software solutions that help businesses grow and succeed. Our goal is to bring fresh ideas and top-quality service to every project, ensuring our clients achieve their business goals.            </p>
             <div className="mt-8 flex flex-col sm:flex-row">
-              <button className="w-full sm:w-auto mb-4 sm:mb-0 inline-flex items-center uppercase font-semibold justify-center px-6 py-3 border border-transparent text-base  rounded-md shadow-sm text-white bg-primary hover:bg-secondary transition duration-300">
+              <button 
+              onClick={() => router.push('/about-us')}
+               className="w-full sm:w-auto mb-4 sm:mb-0 inline-flex items-center uppercase font-semibold justify-center px-6 py-3 border border-transparent text-base  rounded-md shadow-sm text-white bg-primary hover:bg-secondary transition duration-300">
                 About Company <IoIosArrowForward className="ml-2" />
               </button>
               {/* <button className="w-full sm:w-auto sm:ml-4 inline-flex items-center justify-center px-6 py-3 border border-primary text-base font-medium rounded-md text-primary bg-white hover:bg-tertiary transition duration-300">

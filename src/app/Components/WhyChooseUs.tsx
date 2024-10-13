@@ -1,7 +1,11 @@
+'use client'
 import Image from 'next/image';
 import Image1 from '../assets/image1.webp';
+import { useRouter } from 'next/navigation';
 
 export default function WhyChooseUs() {
+  const router = useRouter();
+  
   return (
     <section className="py-8 sm:py-12 md:py-16 px-6 sm:px-8 lg:px-16">
       <div className="container mx-auto">
@@ -50,7 +54,9 @@ export default function WhyChooseUs() {
                 </div>
               </div>
             </div>
-            <button className="bg-primary text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-secondary transition duration-300 text-sm sm:text-base font-semibold hover:shadow-lg">
+            <button 
+            onClick={() => router.push('/about-us')}
+              className="bg-primary text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-secondary transition duration-300 text-sm sm:text-base font-semibold hover:shadow-lg">
               LEARN MORE →
             </button>
           </div>
