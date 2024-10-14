@@ -26,12 +26,18 @@
   "devDependencies": {
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.16",
+    "framer-motion": "^11.11.1",
+    "next": "14.2.14",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "react-intersection-observer": "^9.13.1",
+    "swiper": "^11.1.14",
     "eslint": "^8",
     "eslint-config-next": "14.2.14",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
+
 }
