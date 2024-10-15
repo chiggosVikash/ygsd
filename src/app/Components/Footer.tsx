@@ -1,9 +1,21 @@
+"use client"
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../assets/ygsd_transparent.png'
+import { useSubscriptionStore } from '../stores/subscription-store';
+import { useForm } from 'react-hook-form';
+import { ISubscription } from '../models/Subscription';
 
 const Footer: React.FC = () => {
+  const {register,handleSubmit}=useForm();
+
+  const {saveSubscription,isSaving,isSaved}=useSubscriptionStore();
+
+  const onSubmit= async (data:ISubscription)=>{
+    await saveSubscription(data);
+  }
   return (
     <footer className="bg-darkcolor text-white pt-12">
       <div className="container mx-auto px-4">
@@ -21,16 +33,22 @@ const Footer: React.FC = () => {
               <h3 className="text-xl font-semibold mb-2">News Subscription</h3>
               <p className="text-sm text-gray-400">Subscribe Now</p>
             </div>
+            <form onSubmit={handleSubmit((data)=>onSubmit(data as ISubscription))}>
             <div className="flex mt-4 lg:mt-0">
               <input
                 type="email"
                 placeholder="Email Address"
+                {...register("email")}
                 className="bg-gray-700 text-white px-4 py-2 rounded-l-md focus:outline-none"
               />
-              <button className="bg-primary hover:bg-opacity-90 text-white px-6 py-2 rounded-r-md transition duration-300">
-                SUBSCRIBE
+              <button 
+                type="submit"
+                className="bg-primary hover:bg-opacity-90 text-white px-6 py-2 rounded-r-md transition duration-300">
+                {isSaving?"Saving...":isSaved?"Saved":"SUBSCRIBE"}
               </button>
             </div>
+
+            </form>
           </div>
         </div>
 

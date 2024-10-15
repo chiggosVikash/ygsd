@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+
 const StatItem = ({ icon, number, label }) => (
   <div className="flex flex-col items-center">
     <div className="relative mb-2 group">
