@@ -50,6 +50,7 @@ const projects = [
   },
 
   {
+    
     title: 'School ERP',
     description: "YGSD's School ERP system simplifies academic management, attendance tracking, and payroll, providing a complete solution for educational institutions.",
     image: `${ShowCase1.src}`
