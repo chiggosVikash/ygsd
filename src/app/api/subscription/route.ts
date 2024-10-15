@@ -2,6 +2,7 @@ import { NextRequest,NextResponse } from "next/server";
 import { createSubscription} from "./controller"
 import { ISubscription } from "@/app/models/Subscription";
 
+
 export async function POST(req:NextRequest){
     try{
         const subscription:ISubscription=await req.json();
