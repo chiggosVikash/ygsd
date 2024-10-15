@@ -5,6 +5,8 @@ import { createContactUs } from "./controller";
 export async function POST(req: NextRequest) {
     try{
         const contactUs: IContactUs = await req.json()
+        console.log(contactUs);
+        return;
         await createContactUs(contactUs);
         // console.log(contactUs);
         // await SendMailToTeam(contactUs);
