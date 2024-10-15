@@ -47,6 +47,7 @@ const projects = [
     title: 'Business Management System',
     description: "YGSD's Business Management Software offers comprehensive solutions for invoicing, inventory control, sales tracking, and performance analytics to optimize operations.",
     image: `${ShowCase1.src}`
+    
   },
 
   {
