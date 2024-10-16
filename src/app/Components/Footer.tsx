@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">QUICK LINKS</h4>
             <ul className="space-y-2">
-              {['About Us', 'Teams', 'Projects', 'Contact us'].map((item) => (
+              {['About Us', 'Teams', 'Projects', 'Contact us', 'Privacy Policy'].map((item) => (
                 <li key={item} className="flex items-center">
                   <svg className="w-3 h-3 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -127,10 +127,13 @@ const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="mt-12 bg-primary py-4">
-          <div className="container mx-auto px-4">
-            <p className="text-sm text-center">
+          <div className="container mx-auto px-4 flex justify-between items-center">
+            <p className="text-sm">
               Copyright © 2024 YGSD. All Rights Reserved.
             </p>
+            <Link href="/privacy-policy" className="text-sm hover:underline">
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>
